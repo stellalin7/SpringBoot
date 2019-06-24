@@ -24,8 +24,12 @@ public class BlogPost {
 		this.blogEntry = blogEntry;
 	}
 
-	public long getID() {
+	public Long getID() {
 		return id;
+	}
+
+	public void setID(Long id) {
+		this.id = id;
 	}
 	
 	public String getTitle() {
@@ -56,5 +60,7 @@ public class BlogPost {
 	public String toString() {
 		return "BlogPost [id=" + id + ", title=" + title + ", author=" + author + ", blogEntry=" + blogEntry + "]";
 	}
+
+	
 
 }
