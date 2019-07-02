@@ -45,7 +45,7 @@ public class BlogPostControllerTest {
     @Before
     public void setUp() throws Exception {
     	MockitoAnnotations.initMocks(this);
-      blogPostController = new BlogPostController();
+      blogPostController = new BlogPostController(blogPostRepository);
       blogPost = new BlogPost("testTitle","testAuthor","testBlog");
       blogPostRepository.save(blogPost);
     }
